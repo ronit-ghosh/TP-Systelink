@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
 
@@ -38,7 +37,6 @@ const additionalCertifications = [
 ]
 
 export default function CertificationPortfolio() {
-  const { theme } = useTheme()
   const accentColor = "#de7d50"
 
   return (

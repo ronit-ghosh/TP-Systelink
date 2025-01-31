@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Award, Users, Clock, Target, Sparkles } from "lucide-react"
@@ -41,7 +40,6 @@ const features = [
 ]
 
 export default function Features() {
-  const { theme } = useTheme()
   const accentColor = "#de7d50"
 
   return (

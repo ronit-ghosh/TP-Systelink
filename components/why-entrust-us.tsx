@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Award, Users, Briefcase, Shield, Rocket } from "lucide-react"
@@ -39,7 +38,6 @@ const reasons = [
 ]
 
 export default function WhyEntrustUs() {
-  const { theme } = useTheme()
   const accentColor = "#de7d50"
 
   return (
@@ -62,7 +60,7 @@ export default function WhyEntrustUs() {
             viewport={{ once: true }}
           />
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            At TP SYSTELINK, we don't just offer compliance solutions—we craft pathways to excellence, embedding
+            At TP SYSTELINK, we don&apos;t just offer compliance solutions—we craft pathways to excellence, embedding
             quality, sustainability, and safety into the very fabric of your organization.
           </p>
         </div>

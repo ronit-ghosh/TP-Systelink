@@ -69,7 +69,7 @@ export default function About() {
             >
               <p className="text-muted-foreground">
                 Since 2000, TP Systelink has been at the forefront of ISO certification services, helping organizations
-                achieve excellence through standardization. Based in West Bengal, we've established ourselves as a
+                achieve excellence through standardization. Based in West Bengal, we&apos;ve established ourselves as a
                 trusted partner in quality management systems and certification processes.
               </p>
               <p className="text-muted-foreground">

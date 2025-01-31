@@ -1,20 +1,18 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 import { Quote } from "lucide-react"
 
 export default function CeoMessage() {
-  const { theme } = useTheme()
 
   return (
     <section className="py-12 md:py-20">
       <div className="container mx-auto px-4">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="w-full"
         >
@@ -24,11 +22,11 @@ export default function CeoMessage() {
                 <div className="order-2 lg:order-1 space-y-6">
                   <Quote className="w-8 h-8 md:w-12 md:h-12" />
                   <blockquote className="text-base md:text-lg">
-                    "At TP Systelink, our mission is to simplify the path to excellence through comprehensive
+                    &quot;At TP Systelink, our mission is to simplify the path to excellence through comprehensive
                     certification services. We believe that quality management should be accessible to all
-                    organizations, regardless of their size or industry. Our team's dedication to this mission has
+                    organizations, regardless of their size or industry. Our team&apos;s dedication to this mission has
                     helped hundreds of businesses achieve their certification goals and improve their operational
-                    excellence."
+                    excellence.&quot;
                   </blockquote>
                   <div className="space-y-1">
                     <h3 className="text-lg md:text-xl font-semibold">Tashmita A Paul</h3>

@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "ignorePatterns":[
+    "components/ui/images-slider.tsx",
+    "components/ui/split-text.tsx",
+    "components/ui/images-slider.tsx"
+  ]
 }

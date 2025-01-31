@@ -1,10 +1,9 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Linkedin, Twitter, Facebook, Plus, PanelTopClose } from "lucide-react"
+import { Linkedin, Twitter, Facebook, PanelTopClose } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -32,7 +31,6 @@ const teamMembers = [
 ]
 
 export default function Team() {
-  const { theme } = useTheme()
   const accentColor ="#de7d50"
 
   const container = {

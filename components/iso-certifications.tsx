@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -45,7 +44,6 @@ const certifications = [
 ]
 
 export default function IsoCertifications() {
-  const { theme } = useTheme()
   const accentColor = "#de7d50"
 
   return (
@@ -68,7 +66,7 @@ export default function IsoCertifications() {
             viewport={{ once: true }}
           />
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore our comprehensive range of ISO certification services tailored to meet your organization's specific
+            Explore our comprehensive range of ISO certification services tailored to meet your organization&apos;s specific
             needs
           </p>
         </div>

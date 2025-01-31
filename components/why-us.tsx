@@ -1,6 +1,5 @@
 "use client"
 
-import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { CheckCircle } from "lucide-react"
@@ -15,7 +14,6 @@ const reasons = [
 ]
 
 export default function WhyUs() {
-  const accentColor = "#de7d50"
 
   return (
     <section className="py-12 md:py-20 overflow-hidden">

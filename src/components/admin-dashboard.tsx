@@ -26,9 +26,9 @@ export default function AdminDashboard({ mockData }: { mockData: Contact[] }) {
   )
 
   return (
-    <div className="sm:0 md:0 lg:mx-24 xl:mx-32 2xl:mx-40 mb-10">
+    <div className="sm:0 md:0 lg:mx-24 xl:mx-32 2xl:mx-40 md:mb-10 mb-0">
       <div className="h-24"></div>
-      <div className="flex items-center justify-end gap-6 mb-10">
+      <div className="flex items-center justify-end gap-6 mb-10 mx-6">
         <Input
           type="search"
           placeholder="Search contacts..."
@@ -36,7 +36,7 @@ export default function AdminDashboard({ mockData }: { mockData: Contact[] }) {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <Button variant="outline" onClick={() => signOut({ callbackUrl: '/' })}>Sign Out</Button>
+        <Button variant="outline" onClick={() => signOut({ callbackUrl: '/' })}>Log Out</Button>
       </div>
       <Table>
         <TableHeader>
@@ -60,6 +60,11 @@ export default function AdminDashboard({ mockData }: { mockData: Contact[] }) {
           ))}
         </TableBody>
       </Table>
+      <div className="mt-10 text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-primary">
+        <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-primary">
+          <a href="/" className="underline">Go to Homepage</a>
+        </div>
+      </div>
     </div>
   )
 }

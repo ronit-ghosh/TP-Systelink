@@ -8,7 +8,7 @@ import { HeroImages } from "@/lib/images";
 
 export default function Hero() {
   const handleAnimationComplete = () => {
-    console.log('All letters have animated!');
+    console.log('Hi👋');
   };
   const images = HeroImages
   return (

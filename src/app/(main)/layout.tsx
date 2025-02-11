@@ -8,9 +8,23 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "TP Systelink - Simplifying Standards, Driving Excellence",
-  description: "Empowering success through ISO certification since 2000",
-}
+  title: "TP Systelink - ISO Certification Experts",
+  description: "Providing ISO certification services since 2000, ensuring compliance, quality, and industry excellence.",
+  openGraph: {
+    title: "TP Systelink - ISO Certification Experts",
+    description: "Helping businesses achieve ISO 9001, ISO 14001, ISO 27001, and more for global compliance and credibility.",
+    url: "https://tp-systelink.vercel.app",
+    type: "website",
+    images: [
+      {
+        url: "https://res.cloudinary.com/drynqkitl/image/upload/v1738328491/tp_systelink_png_sitecv.png", 
+        width: 1186,
+        height: 1490,
+        alt: "TP Systelink - ISO Certification",
+      },
+    ],
+  },
+};
 
 export default function RootLayout({
   children,

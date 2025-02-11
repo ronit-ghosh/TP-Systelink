@@ -3,8 +3,9 @@ import CertificationProcess from "@/components/iso-process.cards"
 
 export const metadata = {
   title: "Our Services - TP Systelink",
-  description: "Explore our ISO certification services and learn about our certification process.",
-}
+  description: "Explore our ISO certification services, including ISO 9001, ISO 14001, and more for business compliance and excellence.",
+};
+
 
 export default function ServicesPage() {
   return (

@@ -22,7 +22,6 @@ export function LoginForm({
   const handleLogin = async (e: FormEvent) => {
     e.preventDefault()
 
-    console.log(data)
     try {
       const res = await signIn("credentials", {
         email: data.email,

@@ -15,8 +15,6 @@ export const authOptions = {
                 const email = creds.email
                 const password = creds.password
 
-                console.log(email + " " + password)
-
                 try {
                     const user = await prisma.admin.findFirst({ where: { email } })
 

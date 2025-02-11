@@ -36,8 +36,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
-      const res = await axios.post(`/api/contact`, formData)
-      console.log(res)
+      await axios.post(`/api/contact`, formData)
     } catch (error) {
       console.error(error)
     }

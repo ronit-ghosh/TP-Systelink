@@ -60,14 +60,14 @@ export default function IsoCertificationCards() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <motion.h1
+          <motion.h2
             className="text-4xl font-bold mb-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             Our ISO Certification Services
-          </motion.h1>
+          </motion.h2>
           <motion.div
             className="w-16 h-1 mx-auto rounded mb-4"
             style={{ backgroundColor: accentColor }}

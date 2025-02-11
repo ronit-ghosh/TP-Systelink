@@ -46,7 +46,7 @@ export default function Features() {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <motion.h1
+          <motion.h2
             className="text-4xl font-bold mb-2"
             style={{ color: accentColor }}
             initial={{ opacity: 0, y: 20 }}
@@ -54,7 +54,7 @@ export default function Features() {
             viewport={{ once: true }}
           >
             Our Features
-          </motion.h1>
+          </motion.h2>
           <motion.div
             className="w-16 h-1 mx-auto rounded mb-4"
             style={{ backgroundColor: accentColor }}

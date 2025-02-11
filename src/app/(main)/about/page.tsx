@@ -9,6 +9,9 @@ export const metadata = {
   title: "About Us - TP Systelink",
   description:
     "Learn more about TP Systelink, our mission, values, and what sets us apart in ISO certification services.",
+    alternates: {
+      canonical: "https://tp-systelink.vercel.app/about", 
+    },
 }
 
 export default function AboutPage() {

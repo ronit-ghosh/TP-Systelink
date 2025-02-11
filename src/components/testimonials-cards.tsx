@@ -13,7 +13,7 @@ export default function TestimonialsCards() {
     return (
         <div className="mt-24 px-4 md:px-6 lg:px-8">
             <div className="text-center mb-12">
-                <motion.h1
+                <motion.h2
                     className="text-4xl font-bold mb-2"
                     style={{ color: accentColor }}
                     initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export default function TestimonialsCards() {
                     viewport={{ once: true }}
                 >
                     Meet Our Team
-                </motion.h1>
+                </motion.h2>
                 <motion.div
                     className="w-16 h-1 mx-auto rounded mb-4"
                     style={{ backgroundColor: accentColor }}

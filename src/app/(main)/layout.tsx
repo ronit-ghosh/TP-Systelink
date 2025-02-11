@@ -17,12 +17,27 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/drynqkitl/image/upload/v1738328491/tp_systelink_png_sitecv.png", 
+        url: "https://res.cloudinary.com/drynqkitl/image/upload/v1738328491/tp_systelink_png_sitecv.png",
         width: 1186,
         height: 1490,
         alt: "TP Systelink - ISO Certification",
       },
     ],
+  },
+  keywords: [
+    "ISO certification",
+    "ISO 9001",
+    "ISO 14001",
+    "ISO 27001",
+    "Quality management",
+    "Compliance standards",
+    "ISO consultant",
+    "ISO auditing",
+    "Environmental safety",
+    "Occupational health",
+  ],
+  alternates: {
+    canonical: "https://tp-systelink.vercel.app/",
   },
 };
 

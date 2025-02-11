@@ -4,7 +4,7 @@ import { Providers } from "@/lib/providers"
 
 export const metadata = {
   title: 'Login | TP Systelink',
-  description: 'Login Page for admins of TP Systelink',
+  description: 'Login Page for admins of TP Systelink'
 }
 
 export default function RootLayout({

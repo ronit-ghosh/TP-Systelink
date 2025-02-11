@@ -9,8 +9,10 @@ export const metadata = {
       url: "https://tp-systelink.vercel.app/testimonials",
       type: "website",
     },
+    alternates: {
+      canonical: "https://tp-systelink.vercel.app/testimonials", 
+    },
   };
-  
 
 export default function page() {
     return(

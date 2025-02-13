@@ -7,6 +7,7 @@ import Hero from "@/components/hero";
 import Services from "@/components/services";
 import Team from "@/components/team";
 import Testimonials from "@/components/testimonials";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Testimonials />
         <Clients />
         <Contact />
+        <Toaster />
       </main>
     </>
   )

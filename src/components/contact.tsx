@@ -9,7 +9,10 @@ import { Textarea } from "./ui/textarea"
 import { Button } from "./ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select"
 import { Mail, Phone } from "lucide-react"
-import axios from "axios"
+import axios, { isAxiosError } from "axios"
+import { useToast } from "@/hooks/use-toast"
+import { ToastAction } from "./ui/toast"
+
 const services = [
   "ISO 9001 Certification",
   "ISO 14001 Certification",
@@ -24,7 +27,8 @@ const services = [
 
 export default function Contact() {
   const accentColor = "#de7d50"
-
+  const { toast } = useToast()
+  const [loading, setLoading] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,12 +37,43 @@ export default function Contact() {
     message: "",
   })
 
+  const formatDate = (date: Date): string => {
+    return date.toLocaleString("en-US", {
+      weekday: "short",
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    }).replace(" at", " at");
+  };
+
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
+      setLoading(true)
       await axios.post(`/api/contact`, formData)
+      toast({
+        title: "Thank you for contacting us",
+        description: formatDate(new Date()),
+        action: (
+          <ToastAction altText="Goto schedule to undo">Clear</ToastAction>
+        ),
+      })
+      setLoading(false)
     } catch (error) {
-      console.error(error)
+      if (isAxiosError(error)) {
+        toast({
+          title: error.response?.data.error,
+          action: (
+            <ToastAction altText="Goto schedule to undo">Clear</ToastAction>
+          ),
+        })
+        console.error(error.response?.data);
+      }
+      setLoading(false)
     }
   }
 
@@ -139,7 +174,7 @@ export default function Contact() {
                   color: "white",
                 }}
               >
-                Send Message
+               {loading ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </motion.div>

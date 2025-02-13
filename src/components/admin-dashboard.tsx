@@ -12,11 +12,25 @@ type Contact = {
   phone: number
   service: string
   message: string
+  created: string
 }
 
 
 export default function AdminDashboard({ mockData }: { mockData: Contact[] }) {
   const [searchTerm, setSearchTerm] = useState("")
+
+  const formatDate = (dateString: string): string => {
+    const date = new Date(dateString);
+    return date.toLocaleString("en-US", {
+      weekday: "short",
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    }).replace(" at", " at");
+  };
 
   const filteredData = mockData?.filter(
     (contact) =>
@@ -46,6 +60,7 @@ export default function AdminDashboard({ mockData }: { mockData: Contact[] }) {
             <TableHead>Phone</TableHead>
             <TableHead>Service</TableHead>
             <TableHead>Message</TableHead>
+            <TableHead>Contacted On</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -56,6 +71,7 @@ export default function AdminDashboard({ mockData }: { mockData: Contact[] }) {
               <TableCell>{contact.phone}</TableCell>
               <TableCell>{contact.service}</TableCell>
               <TableCell>{contact.message}</TableCell>
+              <TableCell>{formatDate(contact.created)}</TableCell>
             </TableRow>
           ))}
         </TableBody>

@@ -42,7 +42,7 @@ export default function Testimonials() {
           }}
           transition={{
             x: {
-              duration: 20,
+              duration: 40,
               ease: "linear",
               repeat: Infinity,
             },

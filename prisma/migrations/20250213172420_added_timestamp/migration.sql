@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "ContactData" ADD COLUMN     "created" TIMESTAMP(3) DEFAULT CURRENT_TIMESTAMP;

@@ -20,4 +20,5 @@ model ContactData {
   phone   String
   service String
   message String?
+  created DateTime? @default(now())
 }

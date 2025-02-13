@@ -3,6 +3,7 @@
   "ignorePatterns":[
     "src/components/ui/images-slider.tsx",
     "src/components/ui/split-text.tsx",
-    "src/components/ui/images-slider.tsx"
+    "src/components/ui/images-slider.tsx",
+    "src/hooks/use-toast.ts"
   ]
 }
